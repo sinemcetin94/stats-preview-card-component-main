@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+}
+body{
+
+    background-color: hsl(233, 47%, 7%);
+    color: aliceblue;
+}
+.container{
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.image{
+    height: 260px;
+    background-image: url("images/image-header-mobile.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.cover{
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.5;
+    height: 100%;
+}
+.content{
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    font-family: 'Inter', sans-serif;
+}
+#title{
+    padding: 20px;
+    color:hsl(0, 0%, 100%);
+}
+#emp{
+    color: hsl(277, 64%, 61%);
+}
+#title-text{
+    padding: 10px;
+    color: hsla(0, 0%, 100%, 0.5);
+    line-height: 1.4;
+}
+ul{
+    margin: 15px;
+}
+ul li{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px;
+}
+.list-span{
+    display: block;
+    color: hsla(0, 0%, 100%, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 5px;
+    font-size: 11px;
+    font-weight: 400;
+}
+@media screen and (min-width:768px) {
+    body{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    .image, .content{
+        width: 400px;
+    }
+    .image{
+        background-image: url("images/image-header-desktop.jpg");
+        background-size: cover;
+        height: 100%;
+    }
+    .content{
+        text-align: start;
+        padding: 50px;
+    }
+    #title{
+        padding: 0;
+        
+    }
+    #title-text{
+        padding-left: 0;
+        padding-top: 15px;
+        font-size: 13px;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        margin: 0;
+        margin-top: 35px;
+    }
+    ul li{
+        margin: 0;
+        padding:0;
+        padding-right: 35px;
+
+    }
+ 
+}
